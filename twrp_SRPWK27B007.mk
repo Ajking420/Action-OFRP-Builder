@@ -11,13 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from SRPWK27B007 device
-$(call inherit-product, device/samsung/SRPWK27B007/device.mk)
+$(call inherit-product, device/generic/SRPWK27B007/device.mk)
 
 PRODUCT_DEVICE := SRPWK27B007
 PRODUCT_NAME := twrp_SRPWK27B007
-PRODUCT_BRAND := samsung
+PRODUCT_BRAND := generic
 PRODUCT_MODEL := SM-E156B
-samsungT_MANUFACTURER := samsung
+samsungT_MANUFACTURER := generic
 
 PRODUCT_GMS_CLIENTID_BASE := android-generic
 
@@ -25,5 +25,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="m15xnndxx-user 13 TP1A.220624.014 E156BXXS7BYH1 release-keys"
 
 BUILD_FINGERPRINT := 
+
 
 
