@@ -1,0 +1,9 @@
+# Android fstab file for TWRP
+#<src>  <mnt_point>  <type>  <mnt_flags>  <fs_mgr_flags>
+system  /system  erofs  defaults  defaults
+system  /system  f2fs  defaults  defaults
+system  /system  ext4  defaults  defaults
+/dev/block/by-name/boot  /boot  emmc  defaults  defaults
+/dev/block/by-name/recovery  /recovery  emmc  defaults  defaults
+/dev/block/by-name/userdata  /data  f2fs  defaults  defaults
+/dev/block/by-name/cache  /cache  ext4  defaults  defaults
